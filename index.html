@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Програмісти й Ідеї – блог про розробку</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Програмісти & Ідеї</h1>
+      <nav class="main-nav" id="nav">
+        <ul>
+          <li><a href="#about">Про проєкт</a></li>
+          <li><a href="#posts">Статті</a></li>
+          <li><a href="#contact">Зв’язок</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Перемкнути навігацію" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Натхнення для програмістів</h2>
+      <p>Ділимось ідеями, знаннями та інструментами для розробки сучасних веб‑застосунків.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Про проєкт</h2>
+      <p>
+        Цей веб‑сайт створено як стартовий проєкт, що демонструє
+        базову структуру сучасного лендінгу. Він написаний на HTML,
+        CSS та JavaScript і може служити основою для блогу, портфоліо
+        або будь‑якого іншого контенту. Ви можете доповнити його
+        бекендом, наприклад на Ruby on Rails, Django чи Express, або
+        використовувати сучасні фронтенд-фреймворки на кшталт React
+        чи Angular для побудови більш складної програми. Стаття
+        GeeksforGeeks зазначає, що такі фреймворки, як Ruby on Rails,
+        Django, Angular, ASP.NET та Express, входять до топ‑10
+        веб‑фреймворків 2025 року【800770351122905†screenshot】.
+      </p>
+    </div>
+  </section>
+
+  <section id="posts" class="posts">
+    <div class="container">
+      <h2>Останні статті</h2>
+      <article class="post">
+        <h3>Приклад статті 1</h3>
+        <p>
+          Це місце для вашої першої статті. Ви можете писати про
+          цікаві ідеї у програмуванні, ділитися порадами, кодовими
+          рішеннями чи оглядами технологій.
+        </p>
+        <a href="#" class="btn">Читати далі</a>
+      </article>
+      <article class="post">
+        <h3>Приклад статті 2</h3>
+        <p>
+          Друга стаття демонструє, як додавати новий контент на сайт.
+          Скопіюйте блок <code>&lt;article&gt;</code> та змініть його
+          на свою інформацію. Розширюйте функціональність за допомогою
+          інтерактивних елементів у JavaScript.
+        </p>
+        <a href="#" class="btn">Читати далі</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Зв’язок</h2>
+      <p>Маєте пропозиції чи питання? Напишіть нам через форму нижче.</p>
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Надіслати</button>
+      </form>
+      <p id="formStatus" class="form-status"></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Програмісти & Ідеї. Всі права захищено.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
